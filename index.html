@@ -22,22 +22,4 @@
       </div>
     </div>
   </body>
-    <script>
-    function getRoomId() {
-
-      console.log("THIS FUNCTION WAS CALLED");
-      const params = new URLSearchParams(window.location.search);
-      var rid= params.get('roomId');
-      var roomid_int=parseInt(rid);
-      return roomid_int;
-    }
-    function getAllResults() {
-        window.open("http://admin.paryajpro.com/Results/MyResults?" + getRoomId());
-    }
-function getRecipt() {
-        console.log("Inside the main js function, starting")
-        window.open("http://admin.paryajpro.com/Rooms/GetRecipt?" + getRoomId());
-        console.log("Inside the main js function, ending and transfering control flow back to unity jslib")
-    }
-</script>
 </html>
